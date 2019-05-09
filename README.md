@@ -1,1 +1,1 @@
-# Ezotera
+# Odhadátor popisků aktů
