@@ -27,7 +27,7 @@ var jmeno = document.getElementById("nameForm");
 
 
 var labels = [
-	"Odhadnout popis z názvu a pózy!",
+	"Odhadnout popis!",
 ];
 
 
