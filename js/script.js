@@ -39,8 +39,13 @@ function initialise() {
 function update() {
 
 	dom.output.html(generateIdea());
-	dom.output.hide();
-	dom.output.fadeIn(500);
+    dom.output.hide();
+    dom.waiting.show();
+    setTimeout(function(){
+        dom.waiting.hide();
+        dom.output.fadeIn(500);
+    }, 3000);
+	
 	
 	setGenerateLabel();
 }
@@ -128,7 +133,8 @@ function setGenerateLabel() {
 $(document).ready(function(){
 
 	dom.output = $("#output");
-	dom.generate = $("#generate");
+    dom.generate = $("#generate");
+    dom.waiting = $("#waiting");
 	
 	if(corpus) {
 		initialise();
